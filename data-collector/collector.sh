@@ -3,7 +3,7 @@
 i="0"
 
 while read link; do
-  youtube-dl --extract-audio --audio-format mp3 $link --output "../songs/song${i}.mp3"
+  youtube-dl --extract-audio --audio-format wav $link --output "../songs/song${i}.wav"
 
   i=$[$i+1]
 done <links.txt
